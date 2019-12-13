@@ -1,0 +1,24 @@
+.todos {
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px;
+
+     .todo {
+        display: flex;
+        justify-content: space-between;
+        user-select: none;
+        background: #ddd;
+        padding: 10px;
+        width: 80%;
+             label   {
+                     cursor: pointer;
+        }
+        [type=checkbox]:checked +label {
+            text-decoration: line-through;
+        }
+    }
+}
+

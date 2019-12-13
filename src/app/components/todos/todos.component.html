@@ -1,0 +1,12 @@
+<div class="todos">
+    <div class="todo" *ngFor="let todo of todos; index as i">
+      <input type="checkbox" 
+      name="done"
+       id="txt{{i}}" 
+       (change)="todo.done = !todo.done; logcheckbox(todo)" 
+       [checked]="todo.done"
+       >
+      <label for="txt{{i}}">{{todo.txt}}</label>
+      <button (click)="closeTodo($event)">&times;</button>
+    </div>
+  </div> 
