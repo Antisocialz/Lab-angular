@@ -1,6 +1,21 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!-- The content below is only a placeholder and can be replaced.  -->
 
-<app-header></app-header>
+<div>
+    <app-header></app-header>
+</div>
+
+
+<div >
+    
+    <app-books class="non" [title]="titleForBook" (bookSelected)="getBookSelected($event)" ></app-books>
+    <div class="center">
+        <h2>{{book}}</h2>
+        <h5>{{Descrition}}</h5>
+    </div>
+
+</div>
+
+
 
 <app-todos></app-todos>
 <app-footer></app-footer>

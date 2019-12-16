@@ -1,0 +1,16 @@
+
+<h1>{{title}}</h1>
+
+<div class="books">
+  <div class="book " 
+  (click)="selectBook(b)"
+  [ngClass]="{
+    'booka' :b.available,
+    'bookoui' : !b.available
+    }"
+  *ngFor="let b of books">
+    <h3>{{b.title}}</h3>
+    <h5>Auteur : {{b.author}}  --  Prix : {{b.price}} €</h5>
+    <p>{{b.desc}}</p>
+  </div>
+</div>

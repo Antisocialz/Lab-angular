@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular2';
+  titleForBook = "vive les frites";
+  Descrition = " ";
+  book =" ";
+
+
+  getBookSelected(e) {
+    this.book = e.title
+    this.Descrition = e.preview
+    console.log(e)
+  }
 }

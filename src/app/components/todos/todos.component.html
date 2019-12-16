@@ -1,4 +1,11 @@
+
+
 <div class="todos">
+ 
+    <form (ngSubmit)="onSubmit($event)">
+        <input name="TODOTODO" value="To-do">
+        <button type="submit">GO</button>
+     </form>
     <div class="todo" *ngFor="let todo of todos; index as i">
       <input type="checkbox" 
       name="done"
